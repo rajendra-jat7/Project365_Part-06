@@ -7,7 +7,6 @@ const ExpenseSplitter = () => {
   const [expense, setExpense] = useState("");
   const [darkMode, setDarkMode] = useState(false);
 
-  // Add a new person with expense
   const addPerson = () => {
     if (name.trim() && expense > 0) {
       setPeople([...people, { name, expense: parseFloat(expense) }]);
@@ -18,14 +17,11 @@ const ExpenseSplitter = () => {
     }
   };
 
-  // Calculate Total and Share
   const totalExpense = people.reduce((total, person) => total + person.expense, 0);
   const share = people.length > 0 ? totalExpense / people.length : 0;
 
-  // Calculate who owes how much
   const getBalance = (personExpense) => (personExpense - share).toFixed(2);
 
-  // Remove a person
   const removePerson = (index) => {
     const updatedPeople = people.filter((_, i) => i !== index);
     setPeople(updatedPeople);

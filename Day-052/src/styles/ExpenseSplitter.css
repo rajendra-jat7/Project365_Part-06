@@ -1,4 +1,3 @@
-/* Main Container */
 .container {
     display: flex;
     flex-direction: column;
@@ -12,19 +11,16 @@
     padding: 20px;
   }
   
-  /* Dark Mode */
   .container.dark {
     background: linear-gradient(135deg, #1e1e1e, #3e3e3e);
     color: white;
   }
   
-  /* Header */
   h1 {
     margin-bottom: 20px;
     font-size: 2.5rem;
   }
   
-  /* Input Section */
   .input-section {
     display: flex;
     flex-direction: column;
@@ -57,17 +53,14 @@
     background: #333;
   }
   
-  /* Dark Mode Toggle Button */
   .toggle-mode {
     margin-bottom: 20px;
   }
   
-  /* Summary Section */
   .summary {
     margin-bottom: 30px;
   }
   
-  /* Person Card */
   .people-list {
     width: 100%;
     max-width: 600px;
@@ -85,13 +78,11 @@
     align-items: center;
   }
   
-  /* Dark Mode Card */
   .container.dark .person-card {
     background: #444;
     color: white;
   }
   
-  /* Remove Button */
   .remove-btn {
     background: transparent;
     color: white;
@@ -105,7 +96,6 @@
     background: transparent;
   }
   
-  /* Responsive Design */
   @media (max-width: 600px) {
     .person-card {
       flex-direction: column;

@@ -1,0 +1,99 @@
+.journal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, hsl(212, 99%, 49%), #02f7ff);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: black;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .input-section input,
+  .input-section textarea,
+  .input-section select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .input-section button {
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .input-section button:hover {
+    background: #333;
+  }
+  
+  .search-bar {
+    margin: 20px 0;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 2px solid black;
+  }
+  
+  .entries-list {
+    width: 90%;
+    max-width: 800px;
+    color: #333;
+  }
+  
+  .entry-card {
+    background: white;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .entry-card h3 {
+    margin: 0;
+  }
+  
+  .entry-card button {
+    margin: 10px 5px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .entry-card button:hover {
+    opacity: 0.8;
+  }
+  
+  @media (max-width: 600px) {
+    .input-section,
+    .entries-list {
+      width: 100%;
+    }
+  }
+  

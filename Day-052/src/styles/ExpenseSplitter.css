@@ -1,0 +1,119 @@
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f9b101, #f4d03f);
+    color: black;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Dark Mode */
+  .container.dark {
+    background: linear-gradient(135deg, #1e1e1e, #3e3e3e);
+    color: white;
+  }
+  
+  /* Header */
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  /* Input Section */
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #333;
+  }
+  
+  /* Dark Mode Toggle Button */
+  .toggle-mode {
+    margin-bottom: 20px;
+  }
+  
+  /* Summary Section */
+  .summary {
+    margin-bottom: 30px;
+  }
+  
+  /* Person Card */
+  .people-list {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .person-card {
+    background: white;
+    color: black;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Dark Mode Card */
+  .container.dark .person-card {
+    background: #444;
+    color: white;
+  }
+  
+  /* Remove Button */
+  .remove-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    background: transparent;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .person-card {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    input {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,98 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #f9b101, #ffcc00);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* App Container */
+.app {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* Flashcard Form */
+.flashcard-form {
+  margin-bottom: 20px;
+}
+
+.flashcard-form input {
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+.flashcard-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.flashcard-form button:hover {
+  background: #333;
+}
+
+/* Flashcard List */
+.flashcard-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Flashcard */
+.flashcard {
+  background: #8e8c8c;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: relative;
+  width: 250px;
+  height: 150px;
+}
+
+.flashcard.flipped {
+  background: #ffcc00;
+}
+
+.flashcard:hover {
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: transparent;
+}

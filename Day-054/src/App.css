@@ -1,0 +1,83 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Global Styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #000000, #333333);
+  color: white;
+}
+
+/* Container */
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Search Section */
+.search-container input {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background: #f9b101;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Movie List */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Movie Card */
+.movie-card {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 12px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Watchlist */
+.watchlist-container {
+  margin-top: 40px;
+}
+
+.watchlist-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.watchlist-item img {
+  border-radius: 8px;
+}
+
+button {
+  cursor: pointer;
+}

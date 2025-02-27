@@ -1,0 +1,151 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Form Styling */
+h1 {
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px;
+  width: 350px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #555;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  text-align: left;
+}
+
+input, select {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 15px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e64a19;
+}
+
+/* Aadhaar Card Styling */
+.aadhaar-card {
+  width: 600px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  /* background: linear-gradient(to right, #ff9933, white, #128807); */
+}
+
+.logo {
+  height: 90px;
+  margin-right: 10px;
+}
+
+.sj {
+  height: 70px;
+}
+
+.card-body {
+  display: flex;
+  padding: 10px;
+}
+
+.left-section {
+  flex: 0;
+  /* align-items: start; */
+  text-align: left;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 150px;
+  margin-left: 10px;
+  /* border-radius: 5px; */
+}
+
+.issue-date {
+  /* margin-top: 10px; */
+  font-size: 14px;
+  color: #555;
+  rotate: -90deg;
+}
+
+.right-section {
+  flex: 1;
+  padding-left: 10px;
+}
+
+.right-section p {
+  margin: 5px 0;
+  color: #333;
+  /* justify-content: left; */
+  text-align: left;
+}
+
+.aadhaar-number {
+  font-size: 28px;
+  /* letter-spacing: 2px; */
+  margin: 10px 0;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+}
+.red-line {
+  border: 2px solid red;
+}
+
+.footer {
+  margin-top: 4px;
+  font-weight: 500;
+  font-style: italic;
+  color: black;
+}
+
+.footer span {
+  color: red;
+}

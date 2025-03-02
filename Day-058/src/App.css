@@ -20,6 +20,8 @@ body {
 
 .container {
   text-align: center;
+  width: 100%;
+  max-width: 600px;
 }
 
 /* Form Styling */
@@ -31,8 +33,9 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 50px;
-  width: 350px;
+  padding: 30px;
+  width: 90%;
+  max-width: 350px;
   margin: auto;
   border-radius: 10px;
   background-color: #555;
@@ -66,75 +69,65 @@ input, select {
 
 /* Aadhaar Card Styling */
 .aadhaar-card {
-  width: 600px;
+  width: 100%;
+  max-width: 450px;
   background: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
-  margin-top: 20px;
+  /* margin-top: 10px; */
+  padding: 10px;
 }
 
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 5px;
-  /* background: linear-gradient(to right, #ff9933, white, #128807); */
 }
 
 .logo {
-  height: 90px;
-  margin-right: 10px;
+  height: 60px;
 }
 
 .sj {
-  height: 70px;
+  height: 50px;
 }
 
 .card-body {
   display: flex;
-  padding: 10px;
-}
-
-.left-section {
-  flex: 0;
-  /* align-items: start; */
-  text-align: left;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .profile-pic {
-  width: 130px;
-  height: 150px;
-  margin-left: 10px;
-  /* border-radius: 5px; */
-}
-
-.issue-date {
-  /* margin-top: 10px; */
-  font-size: 14px;
-  color: #555;
-  rotate: -90deg;
+  width: 100px;
+  height: 120px;
+  border-radius: 5px;
 }
 
 .right-section {
   flex: 1;
   padding-left: 10px;
+  text-align: left;
 }
 
 .right-section p {
   margin: 5px 0;
   color: #333;
-  /* justify-content: left; */
-  text-align: left;
 }
 
 .aadhaar-number {
-  font-size: 28px;
-  /* letter-spacing: 2px; */
+  font-size: 24px;
+  text-align: center;
   margin: 10px 0;
-  font-weight: 600;
-  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 2px;
   color: black;
 }
+
 .red-line {
   border: 2px solid red;
 }
@@ -148,4 +141,44 @@ input, select {
 
 .footer span {
   color: red;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+  .form {
+    /* width: 100%; */
+    padding: 10px;
+  }
+
+  .aadhaar-card {
+    /* width: 100%; */
+    /* padding: 10px; */
+  }
+
+  .card-body {
+    /* flex-direction: column; */
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 100px;
+  }
+
+  .right-section {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .aadhaar-number {
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .sj {
+    height: 40px;
+  }
 }

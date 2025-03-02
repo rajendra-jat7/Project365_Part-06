@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background: gray;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App Container */
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  text-align: center;
+  /* color: #333; */
+}
+
+/* Form & Invoice Styles */
+.invoice-form, .invoice-preview {
+  background: #333;
+  padding: 40px;
+  margin-right: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  color: black;
+  background-color: white;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.remove-btn {
+  background: transparent;
+  color: white;
+}
+
+.submit-btn {
+  background: #2E86C1;
+  color: white;
+}
+
+.reset-btn {
+  background: #F39C12;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+}
